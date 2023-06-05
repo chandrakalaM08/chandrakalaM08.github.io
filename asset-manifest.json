@@ -1,17 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.cf6f5c95.js",
-    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/girlcoding.png": "/static/media/girlcoding.8ff8adeaf62ccda33854.png",
+    "main.css": "/static/css/main.5e2be16e.css",
+    "main.js": "/static/js/main.c492f29a.js",
+    "static/media/cargo.png": "/static/media/cargo.2747fb2ec8418626fda1.png",
+    "static/media/dazzlelane.png": "/static/media/dazzlelane.09b0fb9fb332dc1a686f.png",
+    "static/media/roadmaster.png": "/static/media/roadmaster.15c459c7c9067bb534a9.png",
+    "static/media/pizzapassionista.png": "/static/media/pizzapassionista.bd800de90eeeb51528d8.png",
+    "static/media/myphoto.jpg": "/static/media/myphoto.181d42886cdd164e1bb7.jpg",
+    "static/media/girlCoding.gif": "/static/media/girlCoding.b82d0eb115cc9cf23d3c.gif",
+    "static/media/react.png": "/static/media/react.22d1f2096ed82cab7a8a.png",
     "static/media/Chandrakala.gif": "/static/media/Chandrakala.592d092f0f5cff321913.gif",
+    "static/media/mongodb.png": "/static/media/mongodb.4f7af09e6354d51beec8.png",
+    "static/media/css3.png": "/static/media/css3.845e8eb63836bef093cf.png",
+    "static/media/home-bg.jpg": "/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/git.png": "/static/media/git.b1472a80b81e487179cf.png",
+    "static/media/redux.png": "/static/media/redux.7fec6369cecd1cbd44d6.png",
+    "static/media/nodejs.png": "/static/media/nodejs.b508473ad71a31ce2fae.png",
+    "static/media/html5.png": "/static/media/html5.4e6edfe05f07c383e94f.png",
+    "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
+    "static/media/mern.png": "/static/media/mern.b58d81727b47466a7cda.png",
+    "static/media/pre.svg": "/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.cf6f5c95.js.map": "/static/js/main.cf6f5c95.js.map",
-    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+    "main.5e2be16e.css.map": "/static/css/main.5e2be16e.css.map",
+    "main.c492f29a.js.map": "/static/js/main.c492f29a.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.cf6f5c95.js"
+    "static/css/main.5e2be16e.css",
+    "static/js/main.c492f29a.js"
   ]
 }
