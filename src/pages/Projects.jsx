@@ -9,7 +9,7 @@ import cargo from "../assets/projects/cargo.png"
 
 const Projects = () => {
   return (
-    <Container fluid className="project-section" id="projectDetails">
+    <Container fluid className="project-section" id="projects">
 
       <Container>
         <Particle />

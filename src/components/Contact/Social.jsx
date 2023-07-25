@@ -95,7 +95,7 @@ const Social = () => {
               <ImLinkedin fontSize="x-large" />
               <br />
               <br />
-              <a href="https://www.linkedin.com/in/masiwal-chandrakala/" rel="noreferrer" target="_blank">
+              <a href="https://www.linkedin.com/in/masiwal-chandrakala/" rel="noreferrer" target="_blank" id="contact-linkedin">
                 <p>masiwal-chandrakala</p>
               </a>
             </div>
@@ -104,21 +104,21 @@ const Social = () => {
 
               <ImGithub fontSize="xx-large" />
               <br />           <br />
-              <a href="https://github.com/chandrakalaM08" rel="noreferrer" target="_blank">
+              <a href="https://github.com/chandrakalaM08" rel="noreferrer" target="_blank" id="contact-github">
                 <p>chandrakalaM08</p>
               </a>
             </div>
             <div>
               <ImPhone fontSize="x-large" />
               <br />           <br />
-              <a href="tel:+917351667457" rel="noreferrer" target="_blank">
+              <a href="tel:+917351667457" rel="noreferrer" target="_blank" id="contact-phone">
                 <p>+91 7351667457</p>
               </a>
             </div>
             <div>
               <IoIosMail fontSize="xx-large" />
               <br />           <br />
-              <a href='mailto:chandrakala.2508@gmail.com' rel="noreferrer" target="_blank"><p>chandrakala.2508@gmail.com</p></a>
+              <a href='mailto:chandrakala.2508@gmail.com' rel="noreferrer" target="_blank" id="contact-email"><p>chandrakala.2508@gmail.com</p></a>
             </div>
 
           </div>

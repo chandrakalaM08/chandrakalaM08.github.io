@@ -55,9 +55,9 @@ const Skills = () => {
             <h1>Skills</h1>
             <div className='skillsContainer'>
                 {skills.map((ele, index) => (
-                    <div key={index}>
-                        <img src={ele.img} alt={ele.title} width='70px' height='70px' />
-                        <p>{ele.title}</p>
+                    <div key={index} className="skills-card">
+                        <img src={ele.img} alt={ele.title} width='70px' height='70px' className="skills-card-img" />
+                        <p className="skills-card-name">{ele.title}</p>
                     </div>
                 ))}
             </div>

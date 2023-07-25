@@ -6,7 +6,7 @@ import Social from '../components/Contact/Social';
 
 const Contact = () => {
   return (
-    <Container style={{ padding: '60px' }} id="contactme">
+    <Container style={{ padding: '60px' }} id="contact">
       <Particle />
       <ContactForm />
       <br />

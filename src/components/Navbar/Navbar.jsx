@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import logo from "../../assets/Chandrakala.gif";
-
 
 import {
 
@@ -12,14 +10,21 @@ import {
 } from "react-icons/ai";
 import { GiSkills } from "react-icons/gi"
 import { CgFileDocument, CgProfile } from "react-icons/cg";
-import { Link, animateScroll } from 'react-scroll'
-import styled from "styled-components";
+import { animateScroll, Link } from 'react-scroll'
+import { Button } from '@chakra-ui/react'
 
+import myresume from "../../assets/chandrakala_masiwal_resume.pdf"
 
 export function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
   const [active, setActive] = useState('home');
+
+
+  function openResumeInNewTab() {
+    const resumeUrl = "https://drive.google.com/file/d/1-tQC-mBrdaQqePIFtDi6AanoZ8-znyLd/view"
+    window.open(resumeUrl, '_blank');
+  }
 
 
   function scrollHandler() {
@@ -41,7 +46,7 @@ export function NavBar() {
       id="nav-menu"
     >
       {expand === false && (
-        <h2
+        <h2 
           style={{
             fontWeight: "900",
             color: "white",
@@ -64,7 +69,7 @@ export function NavBar() {
       />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto" >
-          <Nav.Item>
+          <Nav.Item className="nav-link home">
             <Nav.Link
               as={Link}
               to="home"
@@ -80,7 +85,7 @@ export function NavBar() {
               <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
+          <Nav.Item className="nav-link about">
             <Nav.Link
               as={Link}
               to="about"
@@ -95,7 +100,7 @@ export function NavBar() {
               <CgProfile style={{ marginBottom: "2px" }} /> About
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
+          <Nav.Item className="nav-link skills">
             <Nav.Link
               as={Link}
               to="skillset"
@@ -110,44 +115,45 @@ export function NavBar() {
               <GiSkills style={{ marginBottom: "2px" }} /> Skills
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
+          <Nav.Item className="nav-link projects">
             <Nav.Link
               as={Link}
-              to="projectDetails"
+              to="projects"
               activeClass="active"
               spy={true}
               smooth={true}
               onClick={() => {
                 updateExpanded(false);
-                setActive('projectDetails');
+                setActive('projects');
               }}
             >
               <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Projects
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
+          <Nav.Item className="nav-link contact">
             <Nav.Link
               as={Link}
-              to="contactme"
+              to="contact"
               activeClass="active"
               spy={true}
               smooth={true}
               onClick={() => {
                 updateExpanded(false);
-                setActive('contactme');
+                setActive('contact');
               }}
             >
               <AiOutlineContacts style={{ marginBottom: "2px" }} /> Contact
             </Nav.Link>
+
           </Nav.Item>
-          <Nav.Item>
-            <Nav.Link
-              href="https://drive.google.com/file/d/1-tQC-mBrdaQqePIFtDi6AanoZ8-znyLd/view?usp=share_link"
-              target="_blank"
+          <Nav.Item className="nav-link resume" id='resume-button-1'
+          >
+            <Nav.Link id="resume-link-1"
+              href={myresume} download={true} target='_blank'
+              onClick={
+                openResumeInNewTab
+              }
               activeClass="active"
-              onClick={() => {
-                updateExpanded(false);
-              }}
             >
               <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
             </Nav.Link>

@@ -1,28 +1,3 @@
-// import React from "react";
-// import GitHubCalendar from "react-github-calendar";
-// import { Row } from "react-bootstrap";
-
-// const Github = () => {
-//   return (
-//     <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-//       <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
-//         Days I <strong className="yellow">Code</strong>
-//       </h1>
-//       <GitHubCalendar
-//         username="chandrakalaM08"
-//         blockSize={15}
-//         blockMargin={5}
-//         color="#367941"
-//         fontSize={16}
-//         background={"yellow"}
-//       />
-//     </Row>
-//   );
-// }
-
-// export default Github;
-
-
 
 import React from 'react'
 import styled from 'styled-components';
@@ -32,14 +7,15 @@ const Github = () => {
     <MainContainer style={{ marginTop: "20px" }}>
 
       <p style={{ color: "white", fontSize: "2.5em", fontWeight: "600", marginBottom: "30px" }}>Days I Worked</p>
-      <Container>
-        <GithubCalendar username='chandrakalaM08' year={new Date().getFullYear()} blockSize={15} blockMargin={5} fontSize={16} />
+          <Container style={{ color: "white" }}>
+              <GithubCalendar className="react-activity-calendar" username='chandrakalaM08' year={new Date().getFullYear()} blockSize={15} blockMargin={5} fontSize={16} />
       </Container>
       <p style={{ color: "white", fontSize: "2.5em", fontWeight: "600", marginBottom: "10px" }}>My Github Statistics</p>
       <div className='stats'>
-        <img align="center" src="https://github-readme-stats.vercel.app/api?username=chandrakalaM08&show_icons=true&locale=en" alt="chandrakalaM08" />
-        <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=chandrakalaM08&" alt="chandrakalaM08" />
-      </div>
+              <img align="center" id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=chandrakalaM08&show_icons=true&locale=en" alt="chandrakalaM08" />
+              <img align="center" id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=chandrakalaM08&layout=compact&theme=light" alt='chandrakalaM08' />
+              <img align="center" id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=chandrakalaM08&" alt="chandrakalaM08" />
+          </div>
     </MainContainer>
   )
 }

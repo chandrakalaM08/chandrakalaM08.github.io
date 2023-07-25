@@ -22,21 +22,25 @@ const Home = () => {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
+              <h1 style={{ paddingBottom: 10 }} className="heading">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
 
-              <h1 className="heading-name">
+              <h1 className="heading-name" >
                 I'm
-                <strong className="main-name">  Chandrakala Masiwal</strong>
+                <strong className="main-name" id="user-detail-name">  Chandrakala Masiwal</strong>
               </h1>
-
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div style={{ padding: 30, textAlign: "left" }}>
                 <Type />
               </div>
+
+              <p style={{ fontWeight: "500", textAlign: "left" }}>
+                A passionate and driven professional transitioning from a successful career in technical recruitment to pursuing my dream of becoming a software developer.
+                With a strong foundation in JavaScript, ReactJs, HTML, and CSS, I am focused on honing my skills and expertise in full-stack web development.
+              </p>
               <Resume />
             </Col>
 

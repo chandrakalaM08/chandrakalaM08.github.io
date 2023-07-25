@@ -2,30 +2,24 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Img from "../../assets/myphoto.jpg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiFillMail,
-  AiOutlinePhone,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
 
 
 const About = () => {
     return (
-        <Container fluid className="home-about-section" id="about">
+      <Container fluid className="about section" id="about">
           <Container>
           <Row>
             <Col md={4} className="myAvtar">
               <Tilt>
-                <img src={Img} className="img-fluid" alt="avatar" width={400} style={{ borderRadius: "10px" }} />
+                <img src={Img} className="home-img img-fluid" alt="avatar" width={400} style={{ borderRadius: "10px" }} />
               </Tilt>
             </Col>
 
               <Col md={8} className="home-about-description">
                 <h1 style={{ fontSize: "2.6em" }}>
-                Let Me <span className="yellow"> Introduce </span> Myself
+                About <span className="yellow"> Me</span> 
                 </h1>
-                <p className="home-about-body">
+              <p className="home-about-body" id="user-detail-intro">
                 Hi, my name is <span className="yellow">Chandrakala Masiwal </span>
                 and I'm from <span className="yellow"> Noida, Uttar Pradesh.</span>
                 <br />

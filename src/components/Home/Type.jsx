@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 
 const Type = () => {
     return (
-        <Typewriter
+      <Typewriter 
           options={{
             strings: [
               "MERN Stack Developer",
